@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="apple-touch-icon" sizes="57x57" href="img/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="img/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="img/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+  <link rel="manifest" href="./manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="./ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <title>Pousada João e Maria</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/nouislider.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/fontawesome.min.css"   rel="stylesheet" />
+  <link href="css/brands.min.css"   rel="stylesheet" />
+  <link href="css/solid.min.css"   rel="stylesheet" />
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC8-qxaEs9FA-bHum5aNqoz77IFaIqClS8&callback=initMap&libraries=&v=weekly"
+    defer></script>
+    <script type="text/javascript">
+      function MM_preloadImages() { //v3.0
+        var d = document; if (d.images) {
+          if (!d.MM_p) d.MM_p = new Array();
+          var i, j = d.MM_p.length, a = MM_preloadImages.arguments; for (i = 0; i < a.length; i++)
+            if (a[i].indexOf("#") != 0) { d.MM_p[j] = new Image; d.MM_p[j++].src = a[i]; }
+        }
+      }
+    </script>
+  
+</head>
+<body onload="MM_preloadImages('img/imagem01.jpg','img/imagem02.jpg','img/imagem03.jpg','img/imagem04.jpg','img/imagem05.jpg','img/imagem06.jpg','img/fotos/acomodacao01.jpg','img/fotos/acomodacao02.jpg','img/fotos/acomodacao03.jpg','img/fotos/acomodacao04.jpg','img/fotos/restaurante01.jpg','img/fotos/restaurante02.jpg','img/fotos/restaurante03.jpg','img/fotos/restaurante04.jpg','img/fotos/restaurante05.jpg','img/fotos/restaurante06.jpg','img/fotos/lazer01.jpg','img/fotos/lazer02.jpg','img/fotos/lazer03.jpg','img/fotos/lazer04.jpg','img/fotos/lazer05.jpg','img/fotos/lazer06.jpg')">
+  <!-- Sidenav Structure -->
+  <ul id="slide-out" class="sidenav menu">
+    <li><a class="green-text darken-4 sidenav-close" href="#inicio">INÍCIO</a></li>
+    <li><a class="green-text darken-4 sidenav-close" href="#acomodacoes">ACOMODAÇÕES</a></li>
+    <li><a class="green-text darken-4 sidenav-close" href="#restaurante">RESTAURANTE</a></li>
+    <li><a class="green-text darken-4 sidenav-close" href="#lazer">LAZER</a></li>
+    <li><a class="green-text darken-4 sidenav-close" href="#localizacao">LOCALIZAÇÃO</a></li>
+    <li><a class="green-text darken-4 sidenav-close" href="#contato">CONTATO</a></li>
+  </ul>
+  <!-- Modal Fotos Acomodações -->
+  <div id="modal-acomodacoes" class="modal  modal-fixed-footer">
+    <div class="modal-content">
+      <h4>Acomodações</h4>
+      <div class="slider">
+        <ul class="slides">
+          <li>
+            <img src="img/fotos/acomodacao01.jpg"> 
+            <div class="caption center-align">
+              <h3>Todos os chalés incluem</h3>
+              <h5 class="light grey-text text-lighten-3">Banheiro, armário, ar-condicionado, TV e frigobar.</h5>
+            </div>
+          </li>
+          <li>
+            <img src="img/fotos/acomodacao02.jpg"> 
+            <div class="caption left-align">
+              <h3>Varanda-térrea</h3>
+              <h5 class="light grey-text text-lighten-3">com rede e vista para a lagoa.</h5>
+            </div>
+          </li>
+          <li>
+            <img src="img/fotos/acomodacao03.jpg">
+            <div class="caption right-align">
+              <h3>Decoração</h3>
+              <h5 class="light grey-text text-lighten-3">possibilidade de customizar a decoração.</h5>
+            </div>
+          </li>
+          <li>
+            <img src="img/fotos/acomodacao04.jpg">
+            <div class="caption center-align">
+              <h3>Acomodações amplas</h3>
+              <h5 class="light grey-text text-lighten-3">prezamos sempre o conforto de nossos clientes.</h5>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <a href="#acomodacoes" class="modal-close waves-effect waves-green btn-flat green-text darken-4">Fechar</a>
+    </div>
+  </div>
+  <!-- Modal Fotos Restaurante -->
+  <div id="modal-restaurante" class="modal  modal-fixed-footer">
+    <div class="modal-content">
+      <h4>Restaurante</h4>
+      <div class="slider">
+        <ul class="slides">
+          <li>
+            <img src="img/fotos/restaurante01.jpg">
+            <div class="caption center-align">
+              <h3>Fogão a lenha</h3>
+              <h5 class="light grey-text text-lighten-3">pratos típicos e mineiro.</h5>
+            </div>
+          </li>
+          <li>
+            <img src="img/fotos/restaurante02.jpg">
+            <div class="caption left-align">
+              <h3>Churrasco</h3>
+              <h5 class="light grey-text text-lighten-3">várias opções de carne na brasa.</h5>
+            </div>
+          </li>
+          <li>
+            <img src="img/fotos/restaurante03.jpg">
+            <div class="caption right-align">
+              <h3>Porções</h3>
+              <h5 class="light grey-text text-lighten-3">oferecemos opções de porções.</h5>
+            </div>
+          </li>
+          <li>
+            <img src="img/fotos/restaurante04.jpg">
+            <div class="caption center-align">
+              <h3>Espaço amplo</h3>
+              <h5 class="light grey-text text-lighten-3">restaurante arejado com vista para a lagoa.</h5>
+            </div>
+          </li>
+          <li>
+            <img src="img/fotos/restaurante05.jpg">
+            <div class="caption center-align">
+              <h3>Café da manhã</h3>
+              <h5 class="light grey-text text-lighten-3">oferecemos uma variedade de opções caseira.</h5>
+            </div>
+          </li>
+          <li>
+            <img src="img/fotos/restaurante06.jpg">
+            <div class="caption left-align">
+              <h3>Caldos</h3>
+              <h5 class="light grey-text text-lighten-3">nosso tradicional caldo da noite.</h5>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <a href="#restaurante" class="modal-close waves-effect waves-green btn-flat green-text darken-4">Fechar</a>
+    </div>
+  </div>
+  <!-- Modal Fotos Lazer -->
+  <div id="modal-lazer" class="modal  modal-fixed-footer">
+    <div class="modal-content">
+      <h4>Lazer</h4>
+      <div class="slider">
+        <ul class="slides">
+          <li>
+            <img src="img/fotos/lazer01.jpg">
+            <div class="caption center-align">
+              <h3>Lagoa do Vale</h3>
+              <h5 class="light grey-text text-lighten-3">anexo a pousada, certamente uma das maiores atrações.</h5>
+            </div>
+          </li>
+          <li>
+            <img src="img/fotos/lazer02.jpg">
+            <div class="caption left-align">
+              <h3>Pesque e Pague</h3>
+              <h5 class="light grey-text text-lighten-3">um dos melhores lugares de pesca profissional no ES.</h5>
+            </div>
+          </li>
+          <li>
+            <img src="img/fotos/lazer03.jpg">
+            <div class="caption right-align">
+              <h3>Tirolesa</h3>
+              <h5 class="light grey-text text-lighten-3">atravesse toda a extensão da lagoa e curta o visual.</h5>
+            </div>
+          </li>
+          <li>
+            <img src="img/fotos/lazer04.jpg">
+            <div class="caption center-align">
+              <h3>Piscina</h3>
+              <h5 class="light grey-text text-lighten-3">refresque-se em nossa piscina, as crianças adoram.</h5>
+            </div>
+          </li>
+          <li>
+            <img src="img/fotos/lazer05.jpg">
+            <div class="caption center-align">
+              <h3>Tó-tó e Sinuca</h3>
+              <h5 class="light grey-text text-lighten-3">não tem como ficar entediado com tantas opções.</h5>
+            </div>
+          </li>
+          <li>
+            <img src="img/fotos/lazer06.jpg">
+            <div class="caption left-align">
+              <h3>Parquinho</h3>
+              <h5 class="light grey-text text-lighten-3">os pequenos vão adorar o parquinho.</h5>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <a href="#lazer" class="modal-close waves-effect waves-green btn-flat green-text darken-4">Fechar</a>
+    </div>
+  </div>
+ 
+
+    <!-- Modal Gil Belei -->
+    <div id="modal-powered-by" class="modal modal-fixed-footer">
+      <div class="modal-content">
+        <h4>GIL Henrique H. Belei</h4>
+        <img class="responsive-img shadow" src="img/gilhhb.jpg">
+        <h5>Projeto Integrador IV-A</h5>
+        <div class="row">
+          <div class="col s12 m6">
+            <h5>Front-End</h5>
+            <p>O visual foi construído com tecnologia HTML5, CSS3 e JavaScript.</p>
+            <p>Usando recursos do CSS o site se adequa para melhro apresentação em dispositivos móveis, notebook, monitores e TVs.
+            </p>
+          </div>
+          <div class="col s12 m6">
+            <img class="responsive-img shadow" src="img/frontend.jpg">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s12 m6">
+            <h5>Infra-Estrutura</h5>
+            <p>Os arquivos são mantidos no repositório do github em <a href="https://github.com/gilbelei/pousadajoaoemaria.gihub.io" target="_blank">https://github.com/gilbelei/pousadajoaoemaria.gihub.io</a> </p>
+          </div>
+          <div class="col s12 m6">
+            <img class="responsive-img shadow" src="img/infraestrutura.png">
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="#rodape" class="modal-close waves-effect waves-green btn-flat green-text darken-4">Fechar</a>
+      </div>
+    </div>
+
+  <!-- Navbar Structure -->
+  <div id="inicio" class="navbar-fixed">
+    <nav class="white green-text darken-4" role="navigation">
+      <div class="nav-wrapper container">
+        <a id="logo-container" href="#inicio" class="brand-logo hide-on-med-and-down">
+          <img class="responsive-img shadow" src="img/logo_nav.png">
+        </a>
+        <a id="logo-container2" href="#inicio" class=" right brand-logo-imagem hide-on-med-and-up">
+          <img class="responsive-img shadow" src="img/logo_imagem_nav.png">
+        </a>
+        <a id="logo-container3" href="#inicio" class="center hide-on-med-and-up">
+          <img class="responsive-img brand-logo-texto center" src="img/logo_texto_nav.png">
+        </a>
+        <ul class="right hide-on-med-and-down">
+          <li><a class="green-text darken-4" href="#inicio">INÍCIO</a></li>
+          <li><a class="green-text darken-4" href="#acomodacoes">ACOMODAÇÕES</a></li>
+          <li><a class="green-text darken-4" href="#restaurante">RESTAURANTE</a></li>
+          <li><a class="green-text darken-4" href="#lazer">LAZER</a></li>          
+          <li><a class="green-text darken-4" href="#localizacao">LOCALIZAÇÃO</a></li>
+          <li><a class="green-text darken-4" href="#contato">CONTATO</a></li>
+        </ul>
+        <a href="#inicio" data-target="slide-out" class="sidenav-trigger"><i class="material-icons green-text darken-4">menu</i></a>
+      </div>
+    </nav>
+  </div>
+
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="titulo-destaque header center green-text darken-4 shadow">Pousada João e Maria</h1>
+        <div class="row center">
+          <h5 class="header col s12 light shadow">Se você está procurando um ponto turístico em Ibiraçu, 
+            você acabou de encontrar a Pousada João e Maria.</h5>
+        </div>
+        <br><br>
+      </div>
+    </div>
+    <div class="parallax"><img src="img/imagem01.jpg" alt="Unsplashed background img 1"></div>
+  </div>
+
+
+  <div class="container">
+    <div class="section">
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center green-text darken-4"><i class="material-icons">hotel</i></h2>
+            <h5 class="center">Acomodações</h5>
+            <p class="light">São 6 chalés planejados, mobiliados e decorados proporcionando um descanso de 
+              qualidade com uma bela
+              vista para a lagoa.</p>
+            <div class="center"><a href="#acomodacoes" class="waves-effect waves-light btn-small green darken-3">VEJA MAIS</a></div>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center green-text darken-4"><i class="material-icons">toys</i></h2>
+            <h5 class="center">Lazer</h5>
+            <p class="light">Em anexo a Lagoa do Vale com pescaria tanto esportiva quanto pesque-pague, 
+              sinuca, piscina, tótó e próximo ao mosteiro zen-budista.</p>
+            <div class="center"><a href="#lazer" class="waves-effect waves-light btn-small green darken-3">CONHEÇA</a></div>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center green-text darken-4"><i class="material-icons">location_on</i></h2>
+            <h5 class="center">Localização</h5>
+            <p class="light">A cerca de 50 km, ao norte da capital do estado do Espírito Santo, é conhecido 
+              por suas pastelarias a beira da estrada e o mosteiro zen-budista.</p>
+            <div class="center"><a href="#localizacao" class="waves-effect waves-light btn-small green darken-3">VEJA O MAPA</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light shadow">A Pousada João e Maria está localizada em Ibiraçu e 
+            oferece piscina ao ar livre e um restaurante. O WiFi é gratuito.</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="img/imagem02.jpg" alt="Unsplashed background img 2"></div>
+  </div>
+
+  <div id="acomodacoes" class="conteudo container">
+    <div class="section">
+      <div class="row">
+        <div class="col s12 center">
+          <h3><i class="mdi-content-send brown-text"></i></h3>
+          <h4>Acomodações</h4>
+          <p class="left-align light">De acomodações amplas e aconchegantes, nossa pousada apresenta uma 
+            linda decoração aos nossos hóspedes, além de prezar sempre pelo conforto e experiência de uma 
+            noite tranquila. Todos os chalés incluem banheiro, armário, ar-condicionado, TV e frigobar.
+          <br/>Todos contam com uma varanda-térrea com rede e vista para a lagoa.</p>
+          <div class="row center">
+            <a id="fotos-acomodacoes-button" class="btn-large waves-effect waves-light green darken-3 modal-trigger"
+              href="#modal-acomodacoes">VEJA AS FOTOS</a>
+          </div>
+          <br><br>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light shadow">Cada quarto dispõe de TV, ar-condicionado e varanda térrea. 
+            Do quarto, você desfruta de vistas para o lago.</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="img/imagem03.jpg" alt="Unsplashed background img 3"></div>
+  </div>
+
+  <div id="restaurante" class="conteudo container">
+    <div class="section">
+      <div class="row">
+        <div class="col s12 center">
+          <h3><i class="mdi-content-send brown-text"></i></h3>
+          <h4>Restaurante</h4>
+          <p class="left-align light">Pela manhã os hospedes tem direito a uma mesa recheada de opções 
+            para o seu café-da-manhã com bolos, pães, queijos, frutas, sucos, achocolatados, iogurtes, 
+            frios e muitos mais.<br/>
+            Para o almoço a pousada está em anexo a Lagoa do Vale que conta com um fogão a lenha recheado de opções da
+            maravilhosa cozinha mineira e uma ótimo churrasco. Conta também com várias porções entre ela a sua
+            famosa tilápia.<br />
+            A noite eles servem maravilhosos caldos frescos feito de forma caseira.</p>
+            <div class="row center">
+              <a id="fotos-restaurante-button" class="btn-large waves-effect waves-light green darken-3 modal-trigger"
+                href="#modal-restaurante">VEJA AS FOTOS</a>
+            </div>
+            <br><br>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+    
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light shadow">Frango caipira com polenta, tilápia, churrasco e outras delícias no fogão à lenha.</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="img/imagem04.jpg" alt="Unsplashed background img 3"></div>
+  </div>
+
+  <div id="lazer" class="conteudo container">
+    <div class="section">
+      <div class="row">
+        <div class="col s12 center">
+          <h3><i class="mdi-content-send brown-text"></i></h3>
+          <h4>Lazer</h4>
+          <p class="left-align light">A pousada esta localizada no circuito Caminhos da Sabedoria, próximo ao mosteiro zen-budista e 
+            em anexo a Lagoa do Vale com opções de pesque-pague ou pesca profissional.<br/>
+            Ela conta com uma piscina descoberta, sinuca, totó e caminhadas ecológica com belas manifestações de mata Atlântica.<br />
+            Próximo a Ibiraçu com sua famosas pastelarias na BR-101 e o Santuário Diocesano Nossa Senhora da Saúde.</p>
+        </div>
+        <div class="row center">
+          <a id="fotos-lazer-button" class="btn-large waves-effect waves-light green darken-3 modal-trigger"
+            href="#modal-lazer">VEJA AS FOTOS</a>
+        </div>
+        <br><br>
+      </div>
+    </div>
+  </div>      
+      
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light shadow">Lagoa com pescaria tanto esportiva quanto pesque-pague, sinuca, totó e piscina. Faça o percurso no caminho da basedoria e visite o mosteiro zen-budista.</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="img/imagem05.jpg" alt="Unsplashed background img 3"></div>
+  </div>
+
+  <div id="localizacao" class="conteudo container">
+    <div class="section">
+      <div class="row">
+        <div class="col s12 center">
+          <h3><i class="mdi-content-send brown-text"></i></h3>
+          <h4>Localização</h4>
+          <p class="left-align light">A pousada esta localizada a três quilômetros da Praça do Portal Budista (Km 208 da BR 101). Da praça do portal tem que seguir pela
+          estrada Pedro Cuttini como quem vai para o distrito Pedro Palácios.</p>
+          <!-- img class="materialboxed responsive-img center"  src="img/Mapa.jpg" -->
+          <div id="map"></div>
+          <div id="legend" class="hide-on-small-only">
+            <h5>Atrações</h5>
+          </div>
+          <div id="legenda" class="row hide-on-med-and-up">
+            <h6>Atrações</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>          
+          
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light shadow">Há cerca de 50km da capital capixaba em Ibiraçu sentido Pedro Palácios.</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="img/imagem06.jpg" alt="Unsplashed background img 3"></div>
+  </div>
+
+  <div id="contato" class="conteudo container">
+    <div class="section">
+      <div class="row">
+        <div class="col s12 center">
+          <h3><i class="mdi-content-send brown-text"></i></h3>
+          <h4>Contato</h4>
+          <p class="left-align light">Gostou do que viu? Sinta-se a
+            vontade para entrar em contato com eles. Pode ser enviando uma mensagem ou pelo telefone (27) 99704-2277, ou até mesmo pelas redes-sociais.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s6 m3">
+          <div class="icon-block">
+            <h2 class="center">
+              <a target="_blank" href="https://www.facebook.com/Pousada-Jo%C3%A3o-e-Maria-665975273514661" class="waves-effect waves-light green-text darken-4">
+                <i class="fab fa-facebook"></i>
+              </a>
+            </h2>
+          </div>
+        </div>
+        <div class="col s6 m3">
+          <div class="icon-block">
+            <h2 class="center">
+              <a target="_blank" href="https://www.instagram.com/pousada.joaoemaria/" class="waves-effect waves-light green-text darken-4">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </h2>
+          </div>
+        </div>
+        <div class="col s6 m3">
+          <div class="icon-block">
+            <h2 class="center">
+              <a target="_blank" href="https://www.tripadvisor.com.br/Hotel_Review-g2572713-d7593648-Reviews-Pousada_Joao_e_Maria-Ibiracu_State_of_Espirito_Santo.html" class="waves-effect waves-light green-text darken-4">
+                <i class="fab fa-tripadvisor"></i>
+              </a>
+            </h2>
+          </div>
+        </div>
+        <div class="col s6 m3">
+          <div class="icon-block">
+            <h2 class="center">
+              <a class="waves-effect waves-light green-text darken-4 modal-trigger"
+            href="mailto:pousada.joaoemaria@hotmail.com">
+                <i class="fas fa-envelope"></i>
+              </a>
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>          
+          
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">O pessoal da pousada adoram receber as pessoas. Qualquer dúvida ou informação, entre em contato com eles.</h5>
+        </div>
+        <br><br>
+      </div>
+    </div>
+    <div class="parallax"><img src="img/imagem07.jpg" alt="Unsplashed background img 3"></div>
+  </div>
+
+
+  <footer id="rodape" class="page-footer  green darken-4">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Pousada João e Maria</h5>
+          <p class="grey-text text-lighten-4">Rodovia Pedro Cutini, km 3 - Pedro Palácios
+          Ibiraçu - ES<BR />(27) 99704-2277</p>
+        </div>
+        <div class="col l6 s12">
+          <h5 class="white-text">Site</h5>
+          <ul>
+            <li><a class="white-text" href="#inicio">Início</a></li>
+            <li><a class="white-text" href="#acomodacoes">Acomodações</a></li>
+            <li><a class="white-text" href="#restaurante">Restaurante</a></li>
+            <li><a class="white-text" href="#lazer">Lazer</a></li>
+            <li><a class="white-text" href="#localizacao">Localização</a></li>
+            <li><a class="white-text" href="#contato">Contato</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Desenvolvido e mantido por <a class="brown-text text-lighten-3  modal-trigger" href="#modal-powered-by">GIL HHB</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/nouislider.min.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/index.js"></script>
+
+  </body>
+</html>

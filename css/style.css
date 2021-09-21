@@ -1,0 +1,246 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+ .conteudo {
+   padding-top: 50px;
+ }
+.titulo-destaque {
+  font-family: 'Playball', cursive !important;
+}
+
+.shadow {-webkit-filter: drop-shadow(2px 2px 1px black);filter: drop-shadow(2px 2px 1px black);}
+
+nav ul a,
+nav .brand-logo {
+     top: 5px;
+}
+nav ul a,
+nav .brand-logo-imagem {
+     padding-top: 5px!important;
+}
+nav ul a,
+nav .brand-logo-texto {
+     padding-top: 5px!important;
+}
+
+p {
+  line-height: 2rem;
+  font-size: 1.5rem!important;
+}
+
+.sidenav-trigger {
+  color: #26a69a;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+
+.parallax-container .section {
+  width: 100%;
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
+
+/* valid color */
+.input-field input[type=text].valid {
+	border-bottom: 1px solid #1b5e20!important;
+	box-shadow: 0 1px 0 0 #388e3c!important;
+}
+
+/* invalid color */
+.input-field input[type=text].invalid {
+	border-bottom: 1px solid #f44336!important;
+	box-shadow: 0 1px 0 0 #e57373!important;
+}
+
+.fa-stack-1x {
+    line-height: inherit;
+}
+.fa-stack-1x, .fa-stack-2x {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+*, ::after, ::before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#map {
+    height: 540px!important;	
+		position:relative!important;
+}
+#legend {
+  background: #fff;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #AAAAAA;
+  top: 0!important;	
+  left: 0px!important;	
+  bottom: unset!important;	
+  right: unset!important;	
+  text-align: left!important;	
+}
+#legend h5 {
+  margin-top: 0;
+}
+#legend img {
+  vertical-align: middle;
+}
+#legenda {
+  background: #fff;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #AAAAAA;
+  top: 0!important;	
+  left: 0px!important;	
+  bottom: unset!important;	
+  right: unset!important;	
+  text-align: center!important;	
+}
+#legenda h6 {
+  margin-top: 0;
+}
+#legenda img {
+  vertical-align: middle;
+}
+#modal-acomodacoes {
+  top: 5%!important;
+  max-height: 100%!important;
+  height: 90%!important;
+}
+#modal-acomodacoes h3, h5 {
+  -webkit-filter: drop-shadow(2px 2px 1px black);filter: drop-shadow(2px 2px 1px black);
+}
+#modal-restaurante {
+  top: 5%!important;
+  max-height: 100%!important;
+  height: 90%!important;
+}
+#modal-restaurante h3, h5 {
+  -webkit-filter: drop-shadow(2px 2px 1px black);filter: drop-shadow(2px 2px 1px black);
+}
+#modal-lazer {
+  top: 5%!important;
+  max-height: 100%!important;
+  height: 90%!important;
+}
+#modal-lazer h3, h5 {
+  -webkit-filter: drop-shadow(2px 2px 1px black);filter: drop-shadow(2px 2px 1px black);
+}
+@media only screen and (max-width : 1200px) {
+  #modal-acomodacoes {
+    max-height: 45%!important;
+  }
+  #modal-restaurante {
+    max-height: 45%!important;
+  }
+    #modal-lazer {
+    max-height: 45%!important;
+  }
+}
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+  .titulo-destaque {
+    font-family: 'Playball', cursive !important;
+    font-size: 3rem !important;
+  }
+  .modal {
+    width: 95%!important;
+    top: 15%!important;
+  }
+  #modal-acomodacoes {
+    max-height: 60%!important;
+  }
+  #modal-acomodacoes h3, h5 {
+    font-size: 2.5rem !important;
+  }
+  #modal-restaurante {
+    max-height: 60%!important;
+  }
+  #modal-restaurante h3, h5 {
+    font-size: 2.5rem !important;
+  }
+  #modal-lazer {
+    max-height: 60%!important;
+  }
+  #modal-lazer h3, h5 {
+    font-size: 2.5rem !important;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  p {
+  font-size: 1.5rem!important;
+  }
+  #index-banner .section {
+    top: 0;
+  }
+  #map {
+    height: 360px!important;
+    position: relative!important;
+  }
+  .gm-style .gm-style-iw-c {
+    max-width: 250px!important;
+    height: 230px!important;
+    max-height: 230px!important;
+  }
+  .gm-style .gm-style-iw-d {
+    max-height: 215px!important;
+  }
+  #modal-acomodacoes {
+    max-height: 100%!important;
+  }
+  #modal-acomodacoes h3, h5 {
+    font-size: 2rem !important;
+  }
+  #modal-restaurante {
+    max-height: 100%!important;
+  }
+  #modal-restaurante h3, h5 {
+    font-size: 2rem !important;
+  }
+  #modal-lazer {
+    max-height: 100%!important;
+  }
+  #modal-lazer h3, h5 {
+    font-size: 2rem !important;
+  }
+}
+
+
+
